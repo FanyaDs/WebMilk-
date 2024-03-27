@@ -1,0 +1,246 @@
+/* admin.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #3b8af7;
+    transition: all 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.logo-details {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding: 0 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.logo-details i {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.logo-details .logo_name {
+    font-size: 22px;
+}
+
+.nav-links {
+    padding: 20px 0;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    background-color: #1346a6;
+    border-radius: 5px;
+}
+
+.nav-links a i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.nav-links .links_name {
+    font-size: 18px;
+}
+
+.home-section {
+    position: relative;
+    margin-left: 250px;
+    padding: 20px 20px 20px 270px;
+}
+
+/* Sidebar Button */
+.sidebar-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 999;
+}
+
+/* Profile Details */
+.profile-details {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Sidebar Animation */
+.sidebar.active {
+    width: 70px;
+}
+
+.sidebar.active .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar.active .nav-links li {
+    margin: 10px 0;
+}
+
+.sidebar.active .nav-links a {
+    justify-content: center;
+}
+
+.sidebar.active .logo-details {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.sidebar.active .logo-details i {
+    margin-right: 0;
+}
+
+.sidebar.active .logo-details .logo_name {
+    display: none;
+}
+
+.sidebar.active .profile-details {
+    display: none;
+}
+
+/* Hover Animation */
+.sidebarBtn:hover {
+    background-color: #1346a6;
+    border-radius: 5px;
+}
+
+.sidebarBtn.active {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/* Content Styles */
+.home-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.home-content h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Form Styles */
+.form-login {
+    margin-top: 20px;
+}
+
+.form-login label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.form-login .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-login .btn {
+    background-color: #1346a6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.form-login .btn:hover {
+    background-color: #0c3363;
+}
+
+/* Table Styles */
+.table-data {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-data th,
+.table-data td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-data th {
+    background-color: #1346a6;
+    color: #fff;
+}
+
+.table-data td {
+    background-color: #f9f9f9;
+}
+
+/* Button Styles */
+.btn-tambah {
+    background-color: #3b8af7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-tambah:hover {
+    background-color: #1346a6;
+}
+
+.center {
+  text-align: center; /* Mengatur teks di dalam div menjadi rata tengah */
+  margin-top: 50px; /* Atur jarak atas div dari atas halaman */
+}
+
+

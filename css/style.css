@@ -1,0 +1,143 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaf4fd; /* Biru muda */
+  color: #333; /* Warna teks gelap */
+}
+
+header {
+  background-color: #75c0f5; /* Biru muda */
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Lingkaran pada logo */
+}
+
+nav a {
+  color: #fff; /* Putih */
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* Membuat tombol terlihat lebih menarik */
+}
+
+nav a:hover {
+  background-color: #4e9ee3; /* Biru tua */
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #75c0f5; /* Biru muda */
+  padding: 20px 0;
+}
+
+/* Form styles */
+.form-login {
+  background-color: #fff; /* Putih */
+  padding: 20px;
+  border-radius: 10px; /* Sudut form lebih bulat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-login h3 {
+  color: #333; /* Warna teks gelap */
+  margin-bottom: 20px;
+}
+
+.form-login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px; /* Jarak antar input diperbesar */
+  border: 1px solid #ccc; /* Abu-abu muda */
+  border-radius: 5px;
+}
+
+.form-login button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4e9ee3; /* Biru tua */
+  color: #fff; /* Putih */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-login button:hover {
+  background-color: #357dbf; /* Biru gelap */
+}
+
+/* Jumbotron styles */
+.jumbotron {
+  background-color: #fff; /* Putih */
+  padding: 40px;
+  border-radius: 10px; /* Sudut jumbotron lebih bulat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.jumbotron h1 {
+  color: #333; /* Warna teks gelap */
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  color: #666; /* Abu-abu gelap */
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.cards-categories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px; /* Sudut gambar lebih bulat */
+}
+
+.center {
+  text-align: center; /* Mengatur teks di dalam div menjadi rata tengah */
+  margin-top: 50px; /* Atur jarak atas div dari atas halaman */
+}
+
+button {
+  padding: 15px 30px; /* Atur padding tombol */
+  font-size: 20px; /* Atur ukuran font */
+  background-color: #ADD8E6; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  border: none; /* Hapus border */
+  border-radius: 8px; /* Atur sudut tombol */
+  cursor: pointer; /* Ubah kursor menjadi tanda tangan saat diarahkan ke tombol */
+  transition: background-color 0.3s; /* Efek transisi saat tombol dihover */
+}
+
+button:hover {
+  background-color: #87CEEB; /* Warna latar belakang saat dihover */
+}
+
+
