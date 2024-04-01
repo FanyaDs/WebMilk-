@@ -30,10 +30,12 @@ nav a {
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 20px; /* Membuat tombol terlihat lebih menarik */
+  background-image: linear-gradient(to right, #4e9ee3, #75c0f5); /* Gradien */
+  transition: background-image 0.3s; /* Animasi */
 }
 
 nav a:hover {
-  background-color: #4e9ee3; /* Biru tua */
+  background-image: linear-gradient(to right, #75c0f5, #4e9ee3); /* Gradien berubah saat dihover */
 }
 
 main {
@@ -76,10 +78,12 @@ footer {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Animasi tambahan */
 }
 
 .form-login button:hover {
   background-color: #357dbf; /* Biru gelap */
+  transform: scale(1.05); /* Perbesar tombol saat dihover */
 }
 
 /* Jumbotron styles */
@@ -113,11 +117,19 @@ footer {
 .card {
   flex: 1;
   margin-right: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  border-radius: 10px; /* Sudut card lebih bulat */
+  overflow: hidden; /* Sembunyikan elemen yang keluar dari card */
 }
 
 .card img {
   width: 100%;
-  border-radius: 10px; /* Sudut gambar lebih bulat */
+  height: auto;
+  transition: transform 0.3s; /* Animasi tambahan */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Perbesar gambar saat dihover */
 }
 
 .center {
@@ -140,4 +152,15 @@ button:hover {
   background-color: #87CEEB; /* Warna latar belakang saat dihover */
 }
 
+.card {
+  width: 200px; /* Atur lebar kartu */
+  height: 200px; /* Atur tinggi kartu */
+  border-radius: 50%; /* Mengatur border-radius menjadi setengah dari lebar/tinggi untuk membuatnya menjadi lingkaran */
+  overflow: hidden; /* Menghindari gambar yang keluar dari lingkaran */
+}
 
+.card img {
+  width: 100%; /* Mengisi lebar gambar ke dalam kartu */
+  height: 100%; /* Mengisi tinggi gambar ke dalam kartu */
+  object-fit: cover; /* Mengatur gambar agar memenuhi ruang kartu */
+}

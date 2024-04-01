@@ -6,6 +6,44 @@
     <link rel="icon" href="assets/logo.jpg" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>WebMilk: Penjualan Susu</title>
+    <style>
+      /* CSS untuk carousel */
+      .carousel-container {
+        max-width: 700px; /* Atur lebar maksimum sesuai kebutuhan Anda */
+        margin: 0 auto; /* Ini akan membuat container berada di tengah */
+        overflow: hidden;
+        position: relative; /* Tambahkan ini */
+      }
+
+      .carousel-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #333;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 2;
+      }
+
+      .arrow-left {
+        left: 10px; /* Sesuaikan posisi panah kiri */
+      }
+
+      .arrow-right {
+        right: 10px; /* Sesuaikan posisi panah kanan */
+      }
+    </style>
   </head>
   <body style="text-align: center">
     <header>
@@ -13,40 +51,78 @@
         <div class="logo">
           <img src="assets/logo.jpg" alt="" width="150" height="auto" />
         </div>
-        <a href="index.html">Beranda</a>
-        <a href="#">Kategori</a>
-        <a href="login.html">Masuk</a>
+        <div class="navbar">
+          <a href="#" id="home-link">Beranda</a>
+          <a href="#" id="category-link">Kategori</a>
+          <a href="login.html" id="login-link">Masuk</a>
+        </div>
       </nav>
     </header>
-    <main>
+    <main id="main-content">
       <div class="jumbotron">
         <h1>Cari Produk Susu Murni Terbaik, Nikmati Hidup Sehatmu</h1>
         <p>
           Dapatkan susu murni berkualitas terbaik langsung ke pintu rumah Anda
         </p>
-        <img
-          src="assets/milk.jpg"
-          alt=""
-          style="max-width: 100%; height: auto"
-        />
+        <div class="carousel-container" id="carousel-container">
+          <img src="assets/milk.jpg" alt="" />
+          <div class="arrow arrow-left" onclick="prevImage()">&lt;</div>
+          <div class="arrow arrow-right" onclick="nextImage()">&gt;</div>
+        </div>
         <div class="center">
-          <button type="button">Mulai Belanja</button>
+          <button id="shop-button" type="button">Mulai Belanja</button>
         </div>
       </div>
       <div class="cards-categories">
         <div class="card">
-          <img src="assets/susu sapi.jpg" alt="" width="" height="400" />
+          <img src="assets/susu sapi.jpg" alt="" />
         </div>
         <div class="card">
-          <img src="assets/susu kambing.jpg" alt="" width="" height="400" />
+          <img src="assets/susu kambing.jpg" alt="" />
         </div>
         <div class="card">
-          <img src="assets/susu kedelai.jpg" alt="" width="" height="400" />
+          <img src="assets/susu kedelai.jpg" alt="" />
         </div>
       </div>
     </main>
     <footer>
       <h4>&copy; WebMilk - Enjoy the Creamy Goodness</h4>
     </footer>
+    <script>
+      // JavaScript untuk carousel
+      const images = [
+        "assets/milk.jpg",
+        "assets/milk 2.jpg",
+        "assets/milk 3.jpg",
+        "assets/milk 4.jpg",
+      ];
+      const carouselContainer = document.getElementById("carousel-container");
+      const imageElement = carouselContainer.querySelector("img");
+      let currentIndex = 0;
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        imageElement.src = images[currentIndex];
+      }
+
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        imageElement.src = images[currentIndex];
+      }
+
+      setInterval(nextImage, 3000);
+
+      // Menetapkan ukuran gambar sesuai dengan ukuran container
+      const containerWidth = carouselContainer.offsetWidth;
+      const containerHeight = carouselContainer.offsetHeight;
+      imageElement.style.width = containerWidth + "px";
+      imageElement.style.height = containerHeight + "px";
+
+      // Event listener untuk tombol "Mulai Belanja"
+      const shopButton = document.getElementById("shop-button");
+      shopButton.addEventListener("click", function () {
+        alert("Selamat datang di toko susu kami!");
+      });
+    </script>
   </body>
 </html>
