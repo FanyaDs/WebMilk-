@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>webmilk : penjualan susu | Entri Kategori</title>
+    <title>webmilk: Penjualan Susu | Kategori</title>
   </head>
   <body>
     <div class="sidebar">
@@ -20,19 +20,19 @@
       </div>
       <ul class="nav-links">
         <li>
-          <a href="../admin.html" class="active">
+          <a href="../admin.php" class="active">
             <i class="bx bx-grid-alt"></i>
             <span class="links_name">Dasbor</span>
           </a>
         </li>
         <li>
-          <a href="../categories/categories.html">
+          <a href="../categories/categories.php">
             <i class="bx bx-box"></i>
             <span class="links_name">Kategori</span>
           </a>
         </li>
         <li>
-          <a href="../transaction/transaction.html">
+          <a href="../transaction/transaction.php">
             <i class="bx bx-list-ul"></i>
             <span class="links_name">Transaksi</span>
           </a>
@@ -51,41 +51,39 @@
           <i class="bx bx-menu sidebarBtn"></i>
         </div>
         <div class="profile-details">
-          <span class="admin_name">webmilk : penjualan susu</span>
+          <span class="admin_name">webmilk: Penjualan Susu</span>
         </div>
       </nav>
       <div class="home-content">
-        <h3>Entri Kategori</h3>
-        <div class="form-login">
-          <form action="">
-            <label for="categories">Kategori</label>
-            <input
-              class="input"
-              type="text"
-              name="categories"
-              id="categories"
-              placeholder="Kategori"
-            />
-            <label for="categories">Harga</label>
-            <input
-              class="input"
-              type="text"
-              name="price"
-              id="price"
-              placeholder="Harga"
-            />
-            <label for="photo">Foto</label>
-            <input
-              type="file"
-              name="photo"
-              id="photo"
-              style="margin-bottom: 20px"
-            />
-            <button type="submit" class="btn btn-simpan" name="simpan">
-              Simpan
-            </button>
-          </form>
-        </div>
+        <h3>Kategori</h3>
+        <button type="button" class="btn btn-tambah">
+          <a href="categories-entry.php">Tambah Data</a>
+        </button>
+        <table class="table-data">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 30%">Foto</th>
+              <th>Kategori</th>
+              <th scope="col" style="width: 20%">Harga</th>
+              <th scope="col" style="width: 30%">Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="../assets/susu sapi.jpg" 
+                  alt=""
+                  width=""
+                  height="200"
+                />
+              </td>
+              <td>Susu Sapi</td>
+              <td>100000</td>
+              <td><a href="">Edit</a> | <a href="">Hapus</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
     <script>

@@ -4,35 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="../assets/logo.jpg" />
     <link rel="stylesheet" href="../css/admin.css" />
-    <!-- Boxicons CDN Link -->
+    <!-- Tautan CDN Boxicons -->
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>webmilk: Penjualan Susu | Tema</title>
+    <title>webmilk: Penjualan Susu | Entri Transaksi</title>
   </head>
   <body>
     <div class="sidebar">
       <div class="logo-details">
         <!-- <i class="bx bx-category"></i> -->
+        <img src="assets/logo.jpg" alt="" width="20" height="auto" />
         <span class="logo_name">webmilk</span>
       </div>
       <ul class="nav-links">
         <li>
-          <a href="../admin.html" class="active">
+          <a href="../admin.php" class="active">
             <i class="bx bx-grid-alt"></i>
             <span class="links_name">Dasbor</span>
           </a>
         </li>
         <li>
-          <a href="../categories/categories.html">
+          <a href="../categories/categories.php">
             <i class="bx bx-box"></i>
             <span class="links_name">Kategori</span>
           </a>
         </li>
         <li>
-          <a href="../transaction/transaction.html">
+          <a href="../transaction/transaction.php">
             <i class="bx bx-list-ul"></i>
             <span class="links_name">Transaksi</span>
           </a>
@@ -55,30 +56,46 @@
         </div>
       </nav>
       <div class="home-content">
-        <h3>Transaksi</h3>
-        <button type="button" class="btn btn-tambah">
-          <a href="transaction-entry.html">Tambah Data</a>
-        </button>
-        <table class="table-data">
-          <thead>
-            <tr>
-              <th style="width: 20%">Nama Pemesan</th>
-              <th>Jenis Susu</th>
-              <th style="width: 20%">Harga</th>
-              <th style="width: 20%">Tanggal</th>
-              <th>Tindakan</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Pau</td>
-              <td>Susu Sapi</td>
-              <td>Rp 100.000</td>
-              <td>12-12-2024</td>
-              <td><a href="">Edit</a> | <a href="">Hapus</a></td>
-            </tr>
-          </tbody>
-        </table>
+        <h3>Entri Transaksi</h3>
+        <div class="form-login">
+          <form action="">
+            <label for="nama">Nama</label>
+            <input
+              class="input"
+              type="text"
+              name="nama"
+              id="nama"
+              placeholder="Nama"
+            />
+            <label for="jenis">Jenis</label>
+            <input
+              class="input"
+              type="text"
+              name="jenis"
+              id="jenis"
+              placeholder="Jenis"
+            />
+            <label for="harga">Harga</label>
+            <input
+              class="input"
+              type="text"
+              name="harga"
+              id="harga"
+              placeholder="Harga"
+            />
+            <label for="tgl">Tanggal</label>
+            <input
+              class="input"
+              type="date"
+              name="tgl"
+              id="tgl"
+              style="margin-bottom: 20px"
+            />
+            <button type="submit" class="btn btn-simpan" name="simpan">
+              Simpan
+            </button>
+          </form>
+        </div>
       </div>
     </section>
     <script>

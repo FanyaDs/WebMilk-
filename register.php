@@ -13,9 +13,9 @@
           <img src="assets/logo.jpg" alt="" width="150" height="auto" />
         </div>
         <div class="menu-items">
-          <a href="index.html">Beranda</a>
+          <a href="index.php">Beranda</a>
           <a href="#">Kategori</a>
-          <a href="login.html">Login</a>
+          <a href="login.php">Login</a>
         </div>
       </nav>
     </header>

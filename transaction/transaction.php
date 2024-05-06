@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id" dir="ltr">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="../assets/logo.jpg" />
@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>webmilk: Penjualan Susu | Kategori</title>
+    <title>webmilk: Penjualan Susu | Tema</title>
   </head>
   <body>
     <div class="sidebar">
@@ -20,19 +20,19 @@
       </div>
       <ul class="nav-links">
         <li>
-          <a href="../admin.html" class="active">
+          <a href="../admin.php" class="active">
             <i class="bx bx-grid-alt"></i>
             <span class="links_name">Dasbor</span>
           </a>
         </li>
         <li>
-          <a href="../categories/categories.html">
+          <a href="../categories/categories.php">
             <i class="bx bx-box"></i>
             <span class="links_name">Kategori</span>
           </a>
         </li>
         <li>
-          <a href="../transaction/transaction.html">
+          <a href="../transaction/transaction.php">
             <i class="bx bx-list-ul"></i>
             <span class="links_name">Transaksi</span>
           </a>
@@ -55,31 +55,26 @@
         </div>
       </nav>
       <div class="home-content">
-        <h3>Kategori</h3>
+        <h3>Transaksi</h3>
         <button type="button" class="btn btn-tambah">
-          <a href="categories-entry.html">Tambah Data</a>
+          <a href="transaction-entry.php">Tambah Data</a>
         </button>
         <table class="table-data">
           <thead>
             <tr>
-              <th scope="col" style="width: 30%">Foto</th>
-              <th>Kategori</th>
-              <th scope="col" style="width: 20%">Harga</th>
-              <th scope="col" style="width: 30%">Aksi</th>
+              <th style="width: 20%">Nama Pemesan</th>
+              <th>Jenis Susu</th>
+              <th style="width: 20%">Harga</th>
+              <th style="width: 20%">Tanggal</th>
+              <th>Tindakan</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>
-                <img
-                  src="../assets/susu sapi.jpg" 
-                  alt=""
-                  width=""
-                  height="200"
-                />
-              </td>
+              <td>Pau</td>
               <td>Susu Sapi</td>
-              <td>100000</td>
+              <td>Rp 100.000</td>
+              <td>12-12-2024</td>
               <td><a href="">Edit</a> | <a href="">Hapus</a></td>
             </tr>
           </tbody>
