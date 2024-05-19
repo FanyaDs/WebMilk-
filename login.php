@@ -24,10 +24,10 @@
         <main>
             <div class="form-login">
                 <h3>Login</h3>
-                <form action="cookie-login.php" method="POST">
-                    <input type="text" name="username" placeholder="Username" />
-                    <input type="password" name="password" placeholder="Password" />
-                    <button type="submit">Login</button>
+                <form action="login-proses.php" method="post">
+                    <input class="input" type="text" name="username" placeholder="Username" required />
+                    <input class="input" type="password" name="password" placeholder="Password" required />
+                    <button type="submit" class="btn_login" name="login" id="login"> Login </button>
                 </form>
                 <a href="register.php">Register Disini</a>
             </div>
