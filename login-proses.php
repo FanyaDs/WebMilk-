@@ -19,12 +19,7 @@ if (isset($_POST['login'])) {
                     alert('Username atau password Anda salah, silahkan coba lagi');
                     window.location = 'login.php';
                   </script>";
-        }
-    } else {
-        echo "<script>
-                alert('Username atau password Anda salah, silahkan coba lagi');
-                window.location = 'login.php';
-              </script>";
+        }    
     }
 }
 ?>
